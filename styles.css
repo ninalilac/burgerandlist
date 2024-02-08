@@ -1,0 +1,174 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: #9d0208;
+
+}
+
+
+/* input */
+
+
+
+#listsection {
+justify-content: block;
+display: block;
+text-align: center;
+padding: 10rem 0;
+margin: 0;
+}
+
+.title {
+    color:#fff3b0;
+    font-size: 2rem;
+}
+
+#clear {
+    background-color:#f4d58d;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+#clear:hover {
+    background-color: #ffd60a;
+}
+
+
+.btn {
+    background-color:#f4d58d;
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    background-color: #ffd60a;  
+}
+
+
+
+#todo {
+    padding: 6px 6px;
+    color: #9b2226;
+    font-weight: bold;
+}
+
+
+#todo:hover {
+    background-color: #ffba08;
+}
+
+
+
+.list li {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Burger Bar */
+
+#burgerIcon {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 55px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
+}
+
+#burgerIcon span, 
+#burgerIcon span::before,
+#burgerIcon span::after {
+    background: #ffba08;
+    display: block;
+    height: 6px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+#burgerIcon span::before,
+#burgerIcon span::after {
+    content: "";
+}
+
+#burgerIcon span {
+    right: 0px;
+    top: 14px;
+    width: 29px;
+  }
+  #burgerIcon span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+  }
+  #burgerIcon span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
+  }
+  
+  #burgerIcon.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  #burgerIcon.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  #burgerIcon.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+  }
+  #menu{
+    z-index:1;
+    min-width:100%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  #menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    padding-top:100px;
+    
+  }
+  
+  #menu li{
+    list-style:none;
+  }
+  #menu a{
+    color: #9d0208;
+    display:block;
+    font-size: 2rem;
+    margin-bottom:30px;
+    text-decoration:none;
+  }
+  
+
+  #menu a:hover {
+    color: #ffd60a;
+  }
+
+
